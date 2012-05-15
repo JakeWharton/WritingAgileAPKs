@@ -23,10 +23,10 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
 
-    <android.support.v4.app.FragmentBreadCrumbs
-            android:id="@+id/breadcrumbs"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp" />
+    <!--<android.support.v4.app.FragmentBreadCrumbs-->
+            <!--android:id="@+id/breadcrumbs"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="40dp" />-->
 
     <FrameLayout
             android:id="@+id/simple_fragment"

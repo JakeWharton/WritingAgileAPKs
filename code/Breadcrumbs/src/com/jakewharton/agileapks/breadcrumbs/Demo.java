@@ -41,9 +41,9 @@ public class Demo extends Activity {
     setContentView(R.layout.main);
 
     //Associate bread crumbs
-    FragmentBreadCrumbs crumbs = (FragmentBreadCrumbs) findViewById(R.id.breadcrumbs);
-    crumbs.setActivity(this);
-    crumbs.setTitle("Base", null);
+    //FragmentBreadCrumbs crumbs = (FragmentBreadCrumbs) findViewById(R.id.breadcrumbs);
+    //crumbs.setActivity(this);
+    //crumbs.setTitle("Base", null);
 
     // Watch for button clicks.
     Button button = (Button) findViewById(R.id.new_fragment);
@@ -79,7 +79,7 @@ public class Demo extends Activity {
     // Add the fragment to the activity, pushing this transaction
     // on to the back stack.
     FragmentTransaction ft = getFragmentManager().beginTransaction();
-    ft.setBreadCrumbTitle("Frag" + mStackLevel);
+    //ft.setBreadCrumbTitle("Frag" + mStackLevel);
     ft.replace(R.id.simple_fragment, newFragment);
     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
     ft.addToBackStack(null);
