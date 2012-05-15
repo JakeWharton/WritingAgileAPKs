@@ -17,6 +17,9 @@ implementations of the libraries covered.
 
 Slides are available for viewing in your browser at http://bit.ly/agileapk
 
+The final backported examples are available on the `after` branch. You can see
+the total diff here: https://github.com/JakeWharton/WritingAgileAPKs/compare/after
+
 
 
 License
