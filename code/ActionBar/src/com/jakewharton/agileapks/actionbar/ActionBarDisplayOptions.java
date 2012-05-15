@@ -21,10 +21,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
-
-import static com.actionbarsherlock.app.ActionBar.Tab;
 
 /**
  * This demo shows how various action bar display option flags can be combined and their effects.
