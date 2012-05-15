@@ -1,0 +1,12 @@
+[submodule "code/vendor/ActionBarSherlock"]
+	path = code/vendor/ActionBarSherlock
+	url = git://github.com/JakeWharton/ActionBarSherlock.git
+[submodule "code/vendor/ViewPagerIndicator"]
+	path = code/vendor/ViewPagerIndicator
+	url = git://github.com/JakeWharton/Android-ViewPagerIndicator.git
+[submodule "code/vendor/HanselAndGretel"]
+	path = code/vendor/HanselAndGretel
+	url = git://github.com/JakeWharton/HanselAndGretel.git
+[submodule "code/vendor/NineOldAndroids"]
+	path = code/vendor/NineOldAndroids
+	url = git://github.com/JakeWharton/NineOldAndroids.git

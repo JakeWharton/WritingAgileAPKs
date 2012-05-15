@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.HanselAndGretel" parent="android:Theme.Black">
+        <item name="hagDividerVertical">@drawable/hag__divider_dark</item>
+        <item name="hagSelectableItemBackground">@drawable/hag__background_dark</item>
+    </style>
+</resources>

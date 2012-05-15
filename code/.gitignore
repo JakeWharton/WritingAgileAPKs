@@ -1,0 +1,8 @@
+out
+gen
+bin
+ant.properties
+local.properties
+proguard-project.txt
+
+.idea/workspace.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ActionBar/ActionBar.iml" filepath="$PROJECT_DIR$/ActionBar/ActionBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/ActionBarSherlock-Library.iml" filepath="$PROJECT_DIR$/vendor/ActionBarSherlock-Library.iml" group="Vendor Libraries" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/ActionBarSherlock-Sample.iml" filepath="$PROJECT_DIR$/vendor/ActionBarSherlock-Sample.iml" group="Vendor Samples" />
+      <module fileurl="file://$PROJECT_DIR$/Animation/Animation.iml" filepath="$PROJECT_DIR$/Animation/Animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Breadcrumbs/Breadcrumbs.iml" filepath="$PROJECT_DIR$/Breadcrumbs/Breadcrumbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/HanselAndGretel-Library.iml" filepath="$PROJECT_DIR$/vendor/HanselAndGretel-Library.iml" group="Vendor Libraries" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/HanselAndGretel-Sample.iml" filepath="$PROJECT_DIR$/vendor/HanselAndGretel-Sample.iml" group="Vendor Samples" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/NineOldAndroids-Library.iml" filepath="$PROJECT_DIR$/vendor/NineOldAndroids-Library.iml" group="Vendor Libraries" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/NineOldAndroids-Sample.iml" filepath="$PROJECT_DIR$/vendor/NineOldAndroids-Sample.iml" group="Vendor Samples" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPager/ViewPager.iml" filepath="$PROJECT_DIR$/ViewPager/ViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/ViewPagerIndicator-Library.iml" filepath="$PROJECT_DIR$/vendor/ViewPagerIndicator-Library.iml" group="Vendor Libraries" />
+      <module fileurl="file://$PROJECT_DIR$/vendor/ViewPagerIndicator-Sample.iml" filepath="$PROJECT_DIR$/vendor/ViewPagerIndicator-Sample.iml" group="Vendor Samples" />
+    </modules>
+  </component>
+</project>
+
