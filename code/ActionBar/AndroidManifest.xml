@@ -9,7 +9,7 @@
     <application
             android:label="Agile APKs: Action Bar"
             android:icon="@drawable/ic_launcher"
-            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
 
         <activity
                 android:name=".ActionBarDisplayOptions"

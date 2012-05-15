@@ -17,11 +17,11 @@
 
 package com.jakewharton.agileapks.breadcrumbs;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentBreadCrumbs;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentBreadCrumbs;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +32,7 @@ import android.widget.TextView;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
-public class Demo extends Activity {
+public class Demo extends FragmentActivity {
   int mStackLevel = 0;
 
   @Override
@@ -41,9 +41,9 @@ public class Demo extends Activity {
     setContentView(R.layout.main);
 
     //Associate bread crumbs
-    //FragmentBreadCrumbs crumbs = (FragmentBreadCrumbs) findViewById(R.id.breadcrumbs);
-    //crumbs.setActivity(this);
-    //crumbs.setTitle("Base", null);
+    FragmentBreadCrumbs crumbs = (FragmentBreadCrumbs) findViewById(R.id.breadcrumbs);
+    crumbs.setActivity(this);
+    crumbs.setTitle("Base", null);
 
     // Watch for button clicks.
     Button button = (Button) findViewById(R.id.new_fragment);
@@ -56,7 +56,7 @@ public class Demo extends Activity {
     if (savedInstanceState == null) {
       // Do first time initialization -- add initial fragment.
       Fragment newFragment = CountingFragment.newInstance(mStackLevel);
-      FragmentTransaction ft = getFragmentManager().beginTransaction();
+      FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
       ft.add(R.id.simple_fragment, newFragment);
       ft.commit();
     } else {
@@ -78,8 +78,8 @@ public class Demo extends Activity {
 
     // Add the fragment to the activity, pushing this transaction
     // on to the back stack.
-    FragmentTransaction ft = getFragmentManager().beginTransaction();
-    //ft.setBreadCrumbTitle("Frag" + mStackLevel);
+    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+    ft.setBreadCrumbTitle("Frag" + mStackLevel);
     ft.replace(R.id.simple_fragment, newFragment);
     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
     ft.addToBackStack(null);

@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
+
 public class VPADemo extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,19 +24,19 @@ public class VPADemo extends Activity {
         final Button animatingButton = (Button) findViewById(R.id.animatingButton);
 
         // Set long default duration for the animator, for the purposes of this demo
-        animatingButton.animate().setDuration(2000);
+        animate(animatingButton).setDuration(2000);
 
         fadeOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animatingButton.animate().alpha(0);
+                animate(animatingButton).alpha(0);
             }
         });
 
         fadeIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animatingButton.animate().alpha(1);
+                animate(animatingButton).alpha(1);
             }
         });
 
@@ -43,21 +45,21 @@ public class VPADemo extends Activity {
             public void onClick(View v) {
                 int xValue = container.getWidth() - animatingButton.getWidth();
                 int yValue = container.getHeight() - animatingButton.getHeight();
-                animatingButton.animate().x(xValue).y(yValue);
+                animate(animatingButton).x(xValue).y(yValue);
             }
         });
 
         moveBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animatingButton.animate().x(0).y(0);
+                animate(animatingButton).x(0).y(0);
             }
         });
 
         rotate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animatingButton.animate().rotationYBy(720);
+                animate(animatingButton).rotationYBy(720);
             }
         });
     }

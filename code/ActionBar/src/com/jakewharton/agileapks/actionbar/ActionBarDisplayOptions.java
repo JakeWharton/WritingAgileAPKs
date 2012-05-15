@@ -15,20 +15,21 @@
  */
 package com.jakewharton.agileapks.actionbar;
 
-import android.app.ActionBar;
-import android.app.ActionBar.Tab;
-import android.app.Activity;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+
+import static com.actionbarsherlock.app.ActionBar.Tab;
 
 /**
  * This demo shows how various action bar display option flags can be combined and their effects.
  */
-public class ActionBarDisplayOptions extends Activity
+public class ActionBarDisplayOptions extends SherlockActivity
         implements View.OnClickListener, ActionBar.TabListener {
     private View mCustomView;
 
@@ -47,7 +48,7 @@ public class ActionBarDisplayOptions extends Activity
 
         mCustomView = getLayoutInflater().inflate(R.layout.action_bar_display_options_custom, null);
         // Configure several action bar elements that will be toggled by display options.
-        final ActionBar bar = getActionBar();
+        final ActionBar bar = getSupportActionBar();
         bar.setCustomView(mCustomView,
                 new ActionBar.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 
@@ -58,12 +59,12 @@ public class ActionBarDisplayOptions extends Activity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.display_options_actions, menu);
+        getSupportMenuInflater().inflate(R.menu.display_options_actions, menu);
         return true;
     }
 
     public void onClick(View v) {
-        final ActionBar bar = getActionBar();
+        final ActionBar bar = getSupportActionBar();
         int flags = 0;
         switch (v.getId()) {
             case R.id.toggle_home_as_up:

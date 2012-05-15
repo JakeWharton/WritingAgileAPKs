@@ -9,6 +9,7 @@ import android.support.v4.app.ListFragment;
 import android.support.v4.view.ViewPager;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
+import com.viewpagerindicator.CirclePageIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,9 @@ public class Demo extends FragmentActivity {
 
     ViewPager pager = (ViewPager) findViewById(R.id.the_view_pager);
     pager.setAdapter(new FakeMarketCategories(this));
+
+    CirclePageIndicator indicator = (CirclePageIndicator) findViewById(R.id.view_pager);
+    indicator.setViewPager(pager);
   }
 
   private static class FakeMarketCategories extends FragmentPagerAdapter {

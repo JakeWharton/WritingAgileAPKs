@@ -12,7 +12,7 @@
             android:icon="@drawable/ic_launcher">
 
         <activity
-                android:name=".BouncingBalls"
+                android:name=".Toggles"
                 android:label="Agile Animation">
 
             <intent-filter>

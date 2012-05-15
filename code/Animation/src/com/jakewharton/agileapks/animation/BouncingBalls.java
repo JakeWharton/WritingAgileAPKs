@@ -20,7 +20,7 @@ package com.jakewharton.agileapks.animation;
 // class is in a sub-package.
 import android.graphics.drawable.ColorDrawable;
 
-import android.animation.*;
+import com.nineoldandroids.animation.*;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
