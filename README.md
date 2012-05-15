@@ -15,6 +15,8 @@ focus on making the content of your app the best it can be! This session will
 include a live coding example, demos, use cases, and a showcase of existing
 implementations of the libraries covered.
 
+Slides are available for viewing in your browser at http://bit.ly/agileapk
+
 
 
 License
